@@ -1,0 +1,7 @@
+from itertools import permutations
+lst = input('Enter elements of list')
+target_num = input("Enter target number')
+
+res = [pair for pair in permutations(lst, 2) if sum(pair) == int(target_num)]
+print(res)
+print(tuple(res))
